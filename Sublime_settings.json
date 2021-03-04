@@ -1,0 +1,24 @@
+{
+  "color_scheme": "Packages/Rainglow/rainglow/Lavender Light (rainglow).tmTheme",
+  "ensure_newline_at_eof_on_save": true,
+  "font_face": "Fira Code",
+  "font_options":
+  [
+    "subpixel_antialias"
+  ],
+  "ignored_packages":
+  [
+    "Markdown",
+    "Vintage"
+  ],
+  "rulers":
+  [
+    80
+  ],
+  "scroll_past_end": true,
+  "skin": "User/Mir_ayu_lavender_light",
+  "tab_size": 2,
+  "theme": "ayu-light.sublime-theme",
+  "translate_tabs_to_spaces": true,
+  "trim_trailing_white_space_on_save": true
+}

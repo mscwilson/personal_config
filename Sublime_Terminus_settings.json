@@ -1,0 +1,16 @@
+{
+  "theme": "user",
+  "user_theme_colors":
+  {
+    "01": "#ff0c5c",
+    "03": "#ff246c",
+    "04": "#000080",
+    "05": "#400080",
+    "background": "#FFF0F5",
+    "caret": "#ff0c5c",
+    "foreground": "#7c7ce4",
+    "selection": "#ffa4c2",
+    "selection_foreground": "#000000"
+  }
+
+}

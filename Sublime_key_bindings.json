@@ -1,0 +1,21 @@
+[
+  { "keys": ["super+shift+k"], "command": "toggle_side_bar" },
+
+  { "keys": ["alt+`"], "command": "toggle_terminus_panel" },
+
+  // Fixes the # appearance bug in Terminus plugin
+  { "keys": ["alt+3"], "command": "terminus_keypress",
+  "args": {"key": "#"}, "context": [{"key": "terminus_view"}] },
+
+  // Switches colours light to dark
+  { "keys": ["§"], "command": "toggle_colors_themes",
+    "args": {
+      "light_theme": "ayu-light.sublime-theme",
+      "dark_theme": "Adaptive.sublime-theme",
+      "light_color_scheme": "Packages/Rainglow/rainglow/Lavender Light (rainglow).tmTheme",
+      "dark_color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme"
+    }
+  },
+
+]
+
