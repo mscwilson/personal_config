@@ -70,7 +70,7 @@ ZSH_THEME="mir_mgutz"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -100,6 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+alias bn="bundle"
+
 # Make a directory and change into it
 mkcd ()
 {
@@ -114,16 +116,32 @@ function gwow() {
   git push
 }
 
-# same as above but also sets the origin
+# same as above but also sets the remote to the same name
 function gori() {
   git add .
   git commit -m "$1"
-  git push --set-upstream origin "$2"
+  git pushup
 }
+
+alias vs="code ."
+
+alias please="sudo"
+
+# Thefuck plugin
+eval $(thefuck --alias)
+
+export PATH=/usr/local/bin:$PATH
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-# syntax highlighting
-source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-export PATH="/opt/homebrew/opt/openssl@1.1/bin:$PATH"
+# for ZSH syntax highlihgting plugin
+source /Users/mirandawilson/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# for less, so that the results stay in the terminal after quitting out of it
+export LESS="-Xr"
+
+export PATH="$HOME/.gem/ruby/3.0.0/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi

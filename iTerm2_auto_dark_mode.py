@@ -5,9 +5,9 @@
 import asyncio
 import iterm2
 
-async def changeTheme(connection,parts):
+async def changeTheme(connection, parts):
   theme_dark = "Dracula"
-  theme_light = "Solarized Light"
+  theme_light = "ayu_light"
   print(parts)
 
   if "dark" in parts:
